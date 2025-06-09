@@ -4,7 +4,7 @@ const express = require('express');
 
 const app = express();
 
-app.get("/", async (req, res) => {
+app.get("/", async (req, res) => { // have an end point set up here
   res.send("hello, friend!");
 });
 
