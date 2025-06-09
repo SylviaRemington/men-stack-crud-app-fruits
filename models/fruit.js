@@ -16,3 +16,6 @@ const fruitSchema = new mongoose.Schema({
 const Fruit = mongoose.model("Fruit", fruitSchema); // This is what creates the model.
 
 module.exports = Fruit;
+
+// you can also do a combination of both lines above and do:
+// module.exports = mongoose.model("Fruit", fruitSchema); 
