@@ -19,6 +19,8 @@ mongoose.connect(process.env.MONGODB_URI);
 mongoose.connection.on("connected", () => {
   console.log(`Connected to MongoDB ${mongoose.connection.name}.`);
 });
+//for above, the try catch is pretty much the same thing; but this above uses more mongoose methods
+//and can do connect or unconnect
 
 
 app.listen(3000, () => {
