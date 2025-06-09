@@ -21,6 +21,8 @@ mongoose.connection.on("connected", () => {
 });
 //for above, the try catch is pretty much the same thing; but this above uses more mongoose methods
 //and can do connect or unconnect
+//This method of mongoose connect gives you a little more feedback from the database though, and can do connect or unconnect.
+
 
 
 app.listen(3000, () => {
