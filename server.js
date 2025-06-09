@@ -1,5 +1,7 @@
 // Here is where we import modules
 // We begin by loading Express
+const dotenv = require('dotenv');
+dotenv.config();
 const express = require('express');
 
 const app = express();
