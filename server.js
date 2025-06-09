@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 app.get("/", async (req, res) => { // have an end point set up here
-  res.send("hello, friend!");
+  res.render("index.ejs"); //changing res.send to res.render
 });
 
 app.listen(3000, () => {
