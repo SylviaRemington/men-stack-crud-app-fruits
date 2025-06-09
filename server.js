@@ -24,7 +24,10 @@ mongoose.connection.on("connected", () => {
 //This method of mongoose connect gives you a little more feedback from the database though, and can do connect or unconnect.
 
 
+// app.listen(3000, () => {
+//   console.log('Listening on port 3000');
+// });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log('Listening on port 3000');
 });
