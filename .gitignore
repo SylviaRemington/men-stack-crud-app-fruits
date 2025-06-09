@@ -1,3 +1,4 @@
 .env
 node_modules
-.DS_Store
+.DS_Store 
+# DS Store is a Mac system file that gets thrown in there, so we can put in gitignore
