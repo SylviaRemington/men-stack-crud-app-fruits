@@ -19,3 +19,4 @@ module.exports = Fruit;
 
 // you can also do a combination of both lines above and do:
 // module.exports = mongoose.model("Fruit", fruitSchema); 
+
