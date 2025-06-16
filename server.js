@@ -8,6 +8,21 @@ const Fruit = require('./models/fruit.js'); //importing to server.js
 
 const app = express();
 
+//Initially setting up a route like what you see below (before we change it later):
+//Build the route - To serve our landing page, we’ll need to start with a route 
+// in our server.js file. We’ll set it up to send a simple response for testing, 
+// then we’ll come back and have it render an EJS file later. 
+// This code, as well as all future routes, should be above the app.listen() method.
+// server.js
+// GET /
+// app.get("/", async (req, res) => {
+//   res.send("hello, friend!");
+// });
+
+
+
+
+
 app.get("/", async (req, res) => { // have an end point set up here
   res.render("index.ejs"); //changing res.send to res.render
 });
