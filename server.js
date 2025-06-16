@@ -19,10 +19,6 @@ const app = express();
 //   res.send("hello, friend!");
 // });
 
-
-
-
-
 app.get("/", async (req, res) => { // have an end point set up here
   res.render("index.ejs"); //changing res.send to res.render so that index.ejs can show up on the homepage
 });
