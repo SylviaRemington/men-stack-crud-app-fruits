@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 const express = require('express');
 const mongoose = require('mongoose'); //requiring the package
-const Fruit = require('./models/fruit.js'); //importing to server.js
+const Fruit = require('./models/fruit.js'); //importing models to server.js
 
 const app = express();
 
