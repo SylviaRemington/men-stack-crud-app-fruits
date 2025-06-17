@@ -23,9 +23,14 @@ app.get("/", async (req, res) => { // have an end point set up here
   res.render("index.ejs"); //changing res.send to res.render so that index.ejs can show up on the homepage
 });
 
+// GET /fruits/new
+app.get("/fruits/new", (req, res) => {
+  res.send("This route sends the user a form page!");
+});
+
+
 // Connect to MongoDB using the connection string in the .env file
 // mongoose.connect(process.env.MONGODB_URI);
-
 mongoose.connect(process.env.MONGODB_URI);
 // log connection status to terminal on start
 mongoose.connection.on("connected", () => {
