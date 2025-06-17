@@ -45,3 +45,21 @@ app.listen(process.env.PORT, () => {
 });
 // So now Listening on port 3000 & Connected to MongoDB fruits.
 
+
+
+
+
+
+
+
+
+// NOTES REGARDING SOMETHING IN ENV FILE: 
+/*
+
+# THE URI ABOVE STANDS FOR A Uniform Resource Identifier - 
+# is a short line of text that gives a clear, standard address for something your app needs to find
+#  — like your database.
+
+# It’s like writing a full, exact address on a letter so the mail knows exactly where to deliver it.
+
+*/
