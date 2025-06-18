@@ -23,9 +23,14 @@ app.get("/", async (req, res) => { // have an end point set up here
   res.render("index.ejs"); //changing res.send to res.render so that index.ejs can show up on the homepage
 });
 
-// GET /fruits/new
+// GET /fruits/new - first put this below in code to check if route works & then change it to what is below it
+// app.get("/fruits/new", (req, res) => {
+//   res.send("This route sends the user a form page!");
+// });
+
+// GET /fruits/new 
 app.get("/fruits/new", (req, res) => {
-  res.send("This route sends the user a form page!");
+  res.render("new.ejs");
 });
 
 
