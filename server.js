@@ -43,7 +43,7 @@ app.get("/", async (req, res) => { // have an end point set up here
 app.get("/fruits", async (req, res) => { //go after the database and get me all the create fruits
   const allFruits = await Fruit.find();
   console.log(allFruits);
-  res.send("Welcome to the index page!");
+  res.render("fruits/index.ejs", { fruits: allFruits });
   //have to send something before we can move on and make a template
 });
 
