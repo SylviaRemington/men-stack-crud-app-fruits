@@ -25,13 +25,26 @@ app.get("/", async (req, res) => { // have an end point set up here
   res.render("index.ejs"); //changing res.send to res.render so that index.ejs can show up on the homepage
 });
 
+// THE THREE GETS BELOW ARE ALL THE SAME - THIS IS JUST SHOWING THE PROGRESSION OF HOW CREATED THIS GET
 // GET /fruits //DID THIS TO SEE IF WORKING, BUT THEN BELOW CHANGED IT AND DID SOMETHING DIFFERENT
 // app.get("/fruits", (req, res) => { 
 //   res.send("Welcome to the index page!");
 // });
 
-app.get("/fruits", (req, res) => { //go after the database and get me all the create fruits
+// DID THIS SECOND BEFORE CHANGED RES.SEND TO RES.RENDER
+// app.get("/fruits", async (req, res) => { //go after the database and get me all the create fruits
+  // const allFruits = await Fruit.find();
+  // console.log(allFruits);
+  // res.send("Welcome to the index page!");
+  //have to send something before we can move on and make a template
+// });
+
+// DID THIS THIRD AND CHANGED RES.SEND TO RES.RENDER
+app.get("/fruits", async (req, res) => { //go after the database and get me all the create fruits
+  const allFruits = await Fruit.find();
+  console.log(allFruits);
   res.send("Welcome to the index page!");
+  //have to send something before we can move on and make a template
 });
 
 // GET /fruits/new - first put this below in code to check if route works & then change it to what is below it
