@@ -16,7 +16,8 @@
     <h1>All Fruits</h1>
     <ul>
     <% fruits.forEach(fruit => { %>
-      <li><%= fruit.name %></li>
+        <!-- Just adding a list item that wraps a link below -->
+       <li><a href="#"><%= fruit.name %></a></li> 
     <% }); %>
     </ul>
     <a href="/">Back to Homepage</a> 
