@@ -1,3 +1,5 @@
+// THE FUNCTIONALITY FOR ALL THE PAGES CONNECTED TOGETHER
+
 // Here is where we import modules
 // We begin by loading Express
 const dotenv = require('dotenv');
@@ -53,7 +55,7 @@ app.get("/fruits", async (req, res) => { //go after the database and get me all 
 // });
 
 // GET /fruits/new 
-app.get("/fruits/new", (req, res) => {
+app.get("/fruits/new", (req, res) => { //THIS DELIVERS THE HTML TO THE FRONT END
   res.render("fruits/new.ejs");
 });
 
@@ -72,16 +74,16 @@ app.get("/fruits/new", (req, res) => {
 // });
 
 // POST /fruits //second version so that it redirects to a new page after creating a fruit
-app.post("/fruits", async (req, res) => {
+app.post("/fruits", async (req, res) => { //THAT HTML FROM ABOVE TRIGGERS THE POST TO FRUITS FROM THE FORM
   console.log(req.body);
 
-    if (req.body.isReadyToEat === "on") {
+    if (req.body.isReadyToEat === "on") { //AND THEN THAT TALKS TO THE DATABASE AND DOES DATA MANIPULATION
     req.body.isReadyToEat = true;
     } else {
     req.body.isReadyToEat = false;
     }
-    await Fruit.create(req.body);
-    res.redirect("/fruits");
+    await Fruit.create(req.body); //AND THEN CREATES IN THE DATABASE AND THEN...
+    res.redirect("/fruits"); // AND THEN REDIRECTS BACK TO FRUITS
 });
 
 
