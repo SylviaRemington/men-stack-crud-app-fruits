@@ -38,7 +38,14 @@ app.get("/fruits/new", (req, res) => {
 // POST /fruits //doing post request for new.ejs //handling this part of code now <form action="/fruits" method="POST">
 app.post("/fruits", async (req, res) => {
   console.log(req.body);
-  res.redirect("/fruits/new");
+
+    if (req.body.isReadyToEat === "on") {
+    req.body.isReadyToEat = true;
+    } else {
+    req.body.isReadyToEat = false;
+    }
+    await Fruit.create(req.body);
+    res.redirect("/fruits/new");
 });
 
 
