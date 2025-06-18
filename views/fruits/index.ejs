@@ -17,7 +17,8 @@
     <ul>
     <% fruits.forEach(fruit => { %>
         <!-- Just adding a list item that wraps a link below -->
-       <li><a href="#"><%= fruit.name %></a></li> 
+       <li><a href="/fruits/<%= fruit._id %>"><%= fruit.name %></a></li> 
+       <!-- Just made the above list more dynamic by adding diff link -->
     <% }); %>
     </ul>
     <a href="/">Back to Homepage</a> 
