@@ -30,7 +30,7 @@ app.get("/", async (req, res) => { // have an end point set up here
 
 // GET /fruits/new 
 app.get("/fruits/new", (req, res) => {
-  res.render("new.ejs");
+  res.render("fruits/new.ejs");
 });
 
 
