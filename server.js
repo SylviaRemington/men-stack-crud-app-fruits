@@ -61,7 +61,9 @@ app.get("/fruits/new", (req, res) => { //THIS DELIVERS THE HTML TO THE FRONT END
 
 // DYNAMIC ROUTES GO AFTER HARDCODED ROUTES //GET /fruits/:fruitID
 app.get("/fruits/:fruitId", (req, res) => {
-  res.send("This is the show page for this item.");
+  // res.send("This is the show page for this item.");
+  res.send(`This route renders the show page for fruit id: ${req.params.fruitId}!`);
+// ! This is where I stopped coding along at 1 hour 26min 14 secs in & just going to follow along for rest of lesson.
 });
 
 // POST /fruits //doing post request for new.ejs //handling this part of code now <form action="/fruits" method="POST">
