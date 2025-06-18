@@ -59,6 +59,11 @@ app.get("/fruits/new", (req, res) => { //THIS DELIVERS THE HTML TO THE FRONT END
   res.render("fruits/new.ejs");
 });
 
+// DYNAMIC ROUTES GO AFTER HARDCODED ROUTES //GET /fruits/:fruitID
+app.get("/fruits/:fruitId", (req, res) => {
+  res.send("show page");
+});
+
 // POST /fruits //doing post request for new.ejs //handling this part of code now <form action="/fruits" method="POST">
 // This the first code wrote for this... but did second version below that shows how it redirected to a new page afterwards
 // app.post("/fruits", async (req, res) => {
