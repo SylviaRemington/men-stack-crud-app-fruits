@@ -132,3 +132,8 @@ app.listen(process.env.PORT, () => {
 #  — like your database.
 # It’s like writing a full, exact address on a letter so the mail knows exactly where to deliver it.
 */
+
+// ! Stopping point of doing the coding-along at 1 hour 31min 02 seconds of FRUITS APP LECTURE
+// ! Stopped coding at this point because couldn't follow along and complete lecture simultaneously after that.
+// ! Stopping point is once we started doing the SHOW PAGE and stopped coding there at view/fruits directory in the show.ejs file.
+
