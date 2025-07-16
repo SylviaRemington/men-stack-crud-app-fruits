@@ -1,3 +1,5 @@
+// MEN STACK CRUD APP FRUITS - lecture code along with notes
+
 // THE FUNCTIONALITY FOR ALL THE PAGES CONNECTED TOGETHER
 
 // Here is where we import modules
